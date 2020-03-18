@@ -1,14 +1,10 @@
 package test;
 
+import static org.junit.jupiter.api.Assertions.assertNotEquals;
 import main.domeinLaag.*;
-
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import java.time.LocalDate;
 import java.util.Calendar;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 public class VluchtTest {
 

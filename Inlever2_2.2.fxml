@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+
+<BorderPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <center>
+      <GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <TitledPane animated="false" text="Vluchtgegevens" collapsible="false">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <VBox prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <HBox minWidth="-Infinity">
+                                 <children>
+                                    <Label text="*Vertrekpunt">
+                                       <HBox.margin>
+                                          <Insets right="15.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <ComboBox prefWidth="150.0" />
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets bottom="5.0" top="5.0" />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox minHeight="-Infinity" minWidth="-Infinity">
+                                 <children>
+                                    <Label text="*Bestemming">
+                                       <HBox.margin>
+                                          <Insets right="12.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <ComboBox prefWidth="150.0" />
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets bottom="5.0" top="5.0" />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox minHeight="-Infinity" minWidth="-Infinity">
+                                 <children>
+                                    <Label text="*Vertrekdatum">
+                                       <HBox.margin>
+                                          <Insets right="7.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <DatePicker />
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets bottom="5.0" top="5.0" />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox minHeight="-Infinity" minWidth="-Infinity">
+                                 <children>
+                                    <Label text="Aankomstdatum" />
+                                    <Label text="[Aankomstgegevens hier]" />
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets bottom="5.0" top="5.0" />
+                                 </VBox.margin>
+                              </HBox>
+                           </children>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </VBox>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </TitledPane>
+            <TitledPane animated="false" text="Klantgegevens" GridPane.rowIndex="1"  collapsible="false">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <VBox prefHeight="200.0" prefWidth="100.0">
+                           <children>
+                              <HBox minWidth="-Infinity">
+                                 <children>
+                                    <Label text="*Voornaam">
+                                       <HBox.margin>
+                                          <Insets right="23.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <TextField prefWidth="187.0" />
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets bottom="5.0" top="5.0" />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox minWidth="-Infinity">
+                                 <children>
+                                    <Label text="*Achternaam">
+                                       <HBox.margin>
+                                          <Insets right="15.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <TextField prefWidth="187.0" />
+                                 </children>
+                              </HBox>
+                              <HBox minHeight="-Infinity" minWidth="-Infinity">
+                                 <children>
+                                    <Label text="*Woonplaats">
+                                       <HBox.margin>
+                                          <Insets right="15.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <TextField prefWidth="187.0" />
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets bottom="5.0" top="5.0" />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox minHeight="-Infinity" minWidth="-Infinity">
+                                 <children>
+                                    <Label text="*Straat">
+                                       <HBox.margin>
+                                          <Insets right="48.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <TextField prefWidth="187.0">
+                                       <HBox.margin>
+                                          <Insets />
+                                       </HBox.margin>
+                                    </TextField>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets bottom="5.0" top="5.0" />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox minHeight="-Infinity" minWidth="-Infinity">
+                                 <children>
+                                    <Label text="*Huisnummer">
+                                       <HBox.margin>
+                                          <Insets right="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <TextField prefWidth="50.0">
+                                       <HBox.margin>
+                                          <Insets right="15.0" />
+                                       </HBox.margin>
+                                    </TextField>
+                                    <Label text="Toevoeging">
+                                       <HBox.margin>
+                                          <Insets right="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <TextField prefWidth="50.0" />
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets bottom="5.0" top="5.0" />
+                                 </VBox.margin>
+                              </HBox>
+                           </children>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </VBox>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </TitledPane>
+            <TitledPane animated="false" text="Vluchtdetails" GridPane.columnIndex="1" GridPane.rowIndex="1"  collapsible="false">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <VBox prefHeight="200.0" prefWidth="100.0">
+                           <children>
+                              <HBox minWidth="-Infinity">
+                                 <children>
+                                    <Label text="*Klasse">
+                                       <HBox.margin>
+                                          <Insets right="55.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <ComboBox prefWidth="150.0" />
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets bottom="5.0" top="5.0" />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox minHeight="-Infinity" minWidth="-Infinity">
+                                 <children>
+                                    <Label text="*Aantal stoelen">
+                                       <HBox.margin>
+                                          <Insets right="12.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <ComboBox prefWidth="150.0" />
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets bottom="5.0" top="5.0" />
+                                 </VBox.margin>
+                              </HBox>
+                           </children>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </VBox>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </TitledPane>
+         </children>
+      </GridPane>
+   </center>
+   <bottom>
+      <FlowPane alignment="TOP_RIGHT" BorderPane.alignment="CENTER">
+         <children>
+            <Label text="Alles met een (*) moet verplicht ingevuld worden!">
+               <FlowPane.margin>
+                  <Insets right="25.0" />
+               </FlowPane.margin>
+            </Label>
+            <Button mnemonicParsing="false" text="Boek vlucht" />
+         </children>
+         <BorderPane.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </BorderPane.margin>
+      </FlowPane>
+   </bottom>
+</BorderPane>
